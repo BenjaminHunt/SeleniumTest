@@ -44,10 +44,12 @@ public class SwenDeptInfo{
 		//driver.findElement(By.xpath("")).click();
 		
 		//Clicks "Colleges"
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\\\"block-rit-bootstrap-subtheme-rit-main-menu\\\"]/ul/li[2]/div/div/ul[1]/li[5]/a")));
 		driver.findElement(By.xpath("//*[@id=\"block-rit-bootstrap-subtheme-rit-main-menu\"]/ul/li[2]/div/div/ul[1]/li[5]/a")).click();
 		
 		//Clicks to Golisano Page
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block-rit-bootstrap-subtheme-content\"]/div/div[3]/div[3]/div/div/div/div/div/div/div/div/ul/li[3]/a")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"block-rit-bootstrap-subtheme-content\"]/div/div[3]/div[3]/div/div/div/div/div/div/div/div/ul/li[3]/a")));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"block-rit-bootstrap-subtheme-content\"]/div/div[3]/div[3]/div/div/div/div/div/div/div/div/ul/li[3]/a")));
 		driver.findElement(By.xpath("//*[@id=\"block-rit-bootstrap-subtheme-content\"]/div/div[3]/div[3]/div/div/div/div/div/div/div/div/ul/li[3]/a")).click();
 		
 		//Clicks to contact button
