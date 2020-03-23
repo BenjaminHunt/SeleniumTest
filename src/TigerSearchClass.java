@@ -94,7 +94,7 @@ public class TigerSearchClass{
 		//get table elements
 		List<WebElement> myElements = driver.findElements(By.cssSelector("app-class-search-row"));
 
-		//Print relevent values
+		//Print relevant values
 		for (WebElement e : myElements) {
 			System.out.println();
 			String a = e.getText();

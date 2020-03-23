@@ -61,12 +61,18 @@ public class SwenDeptInfo{
 		//Wait for dropdown to be visible
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"card-collapse-4291\"]/div/div/article")));
 		
+		
+		
+		
 		//TODO: Extract data and print to console, remove code below
 
-		//get table elements
-		List<WebElement> myElements = driver.findElements(By.cssSelector("app-class-search-row"));
+		
+		
+		
+		//get result(s)
+		List<WebElement> myElements = driver.findElements(By.cssSelector("field-content row pb-4 px-3 mb-4 border-bottom border-neutral-cool-gray"));
 
-		//Print relevent values
+		//Print relevant values
 		for (WebElement e : myElements) {
 			System.out.println();
 			String a = e.getText();
@@ -80,7 +86,8 @@ public class SwenDeptInfo{
 
 	@After
 	public void tearDown() throws Exception {
-		driver.quit();
+		//driver.quit();
+		System.out.println();
 	}
 
 }
