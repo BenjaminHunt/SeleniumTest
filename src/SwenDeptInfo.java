@@ -57,7 +57,7 @@ public class SwenDeptInfo{
 		System.out.println(driver.findElement(By.xpath("//*[@id=\"card-collapse-4291\"]/div/div/article/div/div[3]/div[1]/a")).getText());
 		System.out.println(driver.findElement(By.xpath("///*[@id=\"card-collapse-4291\"]/div/div/article/div/div[2]/div[2]")).getText());
 		System.out.println(driver.findElement(By.xpath("//*[@id=\"card-collapse-4291\"]/div/div/article/div/div[2]/div[3]")).getText());
-		System.out.println(driver.findElement(By.xpath("//*[@id=\"card-collapse-4291\"]/div/div/article/div/div[2]/div[4]"")).getText());
+		System.out.println(driver.findElement(By.xpath("//*[@id=\"card-collapse-4291\"]/div/div/article/div/div[2]/div[4]")).getText());
 
 
 	}
